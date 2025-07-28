@@ -180,3 +180,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Built with ❤️ for GojiTech** 
+
+**Built by:** Kianoush Haratiannejadi
+**Contact:** haratiank2@gmail.com
