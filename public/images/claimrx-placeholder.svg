@@ -1,0 +1,81 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#1a1a1a" rx="12"/>
+  
+  <!-- Background tech pattern -->
+  <defs>
+    <pattern id="techPattern" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="1" fill="#00ff88" opacity="0.1"/>
+      <circle cx="5" cy="5" r="0.5" fill="#007acc" opacity="0.1"/>
+      <circle cx="20" cy="20" r="0.5" fill="#007acc" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="url(#techPattern)"/>
+  
+  <!-- Mobile phone mockup -->
+  <g transform="translate(200, 80)">
+    <!-- Phone outline -->
+    <rect x="-25" y="-30" width="50" height="80" rx="8" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Screen -->
+    <rect x="-20" y="-25" width="40" height="65" rx="4" fill="#2a2a2a" opacity="0.9"/>
+    
+    <!-- Top bar -->
+    <rect x="-18" y="-22" width="36" height="8" fill="#00ff88" opacity="0.3"/>
+    
+    <!-- App content mockup -->
+    <rect x="-15" y="-10" width="30" height="4" fill="#00ff88" opacity="0.6"/>
+    <rect x="-15" y="-3" width="20" height="3" fill="#007acc" opacity="0.5"/>
+    <rect x="-15" y="3" width="25" height="3" fill="#007acc" opacity="0.5"/>
+    
+    <!-- Buttons -->
+    <rect x="-12" y="15" width="24" height="8" rx="4" fill="#00ff88" opacity="0.7"/>
+    <rect x="-12" y="27" width="24" height="8" rx="4" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7"/>
+    
+    <!-- Home indicator -->
+    <rect x="-8" y="42" width="16" height="2" rx="1" fill="#999999" opacity="0.5"/>
+  </g>
+  
+  <!-- Floating UI elements -->
+  <g transform="translate(120, 100)">
+    <rect x="0" y="0" width="30" height="20" rx="4" fill="#007acc" opacity="0.4"/>
+    <rect x="5" y="5" width="20" height="3" fill="#00ff88" opacity="0.8"/>
+    <rect x="5" y="10" width="15" height="2" fill="#00ff88" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(280, 120)">
+    <circle cx="15" cy="10" r="12" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.6"/>
+    <path d="M10 10 L15 15 L20 5" stroke="#00ff88" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Data flow lines -->
+  <path d="M150 120 Q180 110 200 120" stroke="#00ff88" stroke-width="1" opacity="0.4" fill="none">
+    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M250 120 Q280 110 300 130" stroke="#007acc" stroke-width="1" opacity="0.4" fill="none">
+    <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Title -->
+  <text x="200" y="180" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    claimRx
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="200" text-anchor="middle" fill="#999999" font-family="Arial, sans-serif" font-size="14">
+    Consumer Claims App
+  </text>
+  
+  <!-- Animated notification dots -->
+  <circle cx="225" cy="65" r="3" fill="#00ff88" opacity="0.8">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="80" cy="80" r="2" fill="#007acc" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="320" cy="90" r="2" fill="#00ff88" opacity="0.5">
+    <animate attributeName="cy" values="90;85;90" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg> 

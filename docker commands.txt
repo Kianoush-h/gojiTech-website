@@ -1,0 +1,6 @@
+docker build -t gojitech-website .
+az login
+
+az acr login --name kiatests
+docker tag gojitech-website kiatests.azurecr.io/gojitech-website:latest
+docker push kiatests.azurecr.io/gojitech-website:latest
