@@ -82,7 +82,9 @@ const GojiRxPage = () => {
                   </Link>
                   
                   <h1 className="text-6xl lg:text-7xl font-display font-bold mb-8 leading-tight">
-                    <span className="gradient-text">gojiRx 2.0</span>
+                    <span className="gradient-text">gojiRx</span>
+                    <span className="gradient-text align-super text-[0.5em] ml-1">™</span>
+                    <span className="gradient-text"> 2.0</span>
                   </h1>
                   
                   <p className="text-xl text-dark-600 mb-8 leading-relaxed">
@@ -152,6 +154,42 @@ const GojiRxPage = () => {
             </div>
           </section>
 
+          {/* Insights Post Section */}
+          <section id="insights" className="section-padding bg-transparent">
+            <div className="container mx-auto px-6">
+              <div className="max-w-4xl mx-auto bg-transparent border border-dark-300/30 rounded-2xl p-8 md:p-10">
+                <div className="text-center mb-6">
+                  <span className="text-accent text-sm font-medium uppercase tracking-wider">
+                    gojiRx<sup className="text-[0.65em] align-super">™</sup> Insight
+                  </span>
+                  <h2 className="text-4xl lg:text-5xl font-display font-bold mt-3 mb-3">
+                    Closing the Claims Gap in Cannabinoid Therapy
+                  </h2>
+                  <p className="text-dark-600 text-lg">
+                    Why cannabinoid treatments deserve the same approach as traditional prescriptions
+                  </p>
+                </div>
+
+                <div className="space-y-6 text-dark-600 text-lg leading-relaxed">
+                  <p>
+                    In most healthcare systems, prescriptions are processed electronically, fast, accurate, and fully integrated with insurance plans. But when it comes to cannabinoid therapies, patients are still burdened with manual reimbursement, upfront payments, and administrative bottlenecks.
+                  </p>
+                  <p>
+                    gojiRx<sup className="text-[0.65em] align-super">™</sup> changes that. Our platform connects licensed producers / cultivators, clinical pharmacies, and health benefit administrators to automate real-time claims processing for cannabinoid-based treatments. It ensures that patients receive coverage at the point of care, without the paperwork or financial strain.
+                  </p>
+                  <p>
+                    This is equity. As cannabinoid wellness becomes more widely accepted, systems like gojiRx<sup className="text-[0.65em] align-super">™</sup> ensure that patients can access treatment with the same dignity and ease they expect from modern healthcare.
+                  </p>
+                </div>
+
+                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/#contact" className="btn-secondary">Talk to Our Team</Link>
+                  <Link href="#benefits" className="btn-secondary">Explore Benefits</Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* CTA Section */}
           <section className="section-padding bg-transparent">
             <div className="container mx-auto px-6">
@@ -160,8 +198,8 @@ const GojiRxPage = () => {
                   Ready to Transform Your Claims Processing?
                 </h2>
                 <p className="text-dark-600 text-lg mb-8 max-w-2xl mx-auto">
-                  Join healthcare providers who have reduced administrative burden by up to 80% 
-                  and accelerated their cash flow with gojiRx 2.0.
+                   Join healthcare providers who have reduced administrative burden by up to 80% 
+                   and accelerated their cash flow with gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 

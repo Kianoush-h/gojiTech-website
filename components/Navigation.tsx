@@ -13,7 +13,7 @@ const Navigation = () => {
   const pathname = usePathname()
 
   const isHomePage = pathname === '/'
-  const isProductPage = ['/gojirx', '/guiderx', '/claimrx'].includes(pathname)
+  const isProductPage = ['/gojirx', '/guiderx'].includes(pathname)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,8 +36,7 @@ const Navigation = () => {
 
   const products = [
     { name: 'gojiRx 2.0', href: '/gojirx', description: 'AI-Powered Claims Processing' },
-    { name: 'guideRx', href: '/guiderx', description: 'Cannabis Wellness Navigator' },
-    { name: 'claimRx', href: '/claimrx', description: 'Consumer Claims App' }
+    { name: 'guideRx', href: '/guiderx', description: 'Cannabis Wellness Navigator' }
   ]
 
   const handleNavigation = (href: string) => {
@@ -140,7 +139,17 @@ const Navigation = () => {
                       className="block px-4 py-3 hover:bg-accent/10 transition-colors"
                     >
                       <div className="text-sm font-medium text-dark-900 hover:text-accent">
-                        {product.name}
+                        {product.href === '/guiderx' ? (
+                          <>
+                            guideRx<sup className="text-[0.65em] align-super">™</sup>
+                          </>
+                        ) : product.href === '/gojirx' ? (
+                          <>
+                            gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                          </>
+                        ) : (
+                          product.name
+                        )}
                       </div>
                       <div className="text-xs text-dark-600 mt-1">
                         {product.description}
@@ -264,7 +273,19 @@ const Navigation = () => {
                         }}
                         className="block py-3 px-3 text-sm text-dark-600 hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-lg"
                       >
-                        <div className="font-medium">{product.name}</div>
+                        <div className="font-medium">
+                          {product.href === '/guiderx' ? (
+                            <>
+                              guideRx<sup className="text-[0.65em] align-super">™</sup>
+                            </>
+                          ) : product.href === '/gojirx' ? (
+                            <>
+                              gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                            </>
+                          ) : (
+                            product.name
+                          )}
+                        </div>
                         <div className="text-xs text-dark-500 mt-1">{product.description}</div>
                       </Link>
                     ))}

@@ -36,17 +36,12 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="/gojirx" className="text-dark-600 hover:text-accent transition-colors">
-                  gojiRx
+                  gojiRx<sup className="text-[0.65em] align-super">™</sup>
                 </a>
               </li>
               <li>
                 <a href="/guiderx" className="text-dark-600 hover:text-accent transition-colors">
-                  guideRx
-                </a>
-              </li>
-              <li>
-                <a href="/claimrx" className="text-dark-600 hover:text-accent transition-colors">
-                  claimRx
+                  guideRx<sup className="text-[0.65em] align-super">™</sup>
                 </a>
               </li>
               {/* <li>

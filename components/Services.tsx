@@ -15,7 +15,11 @@ const Services = () => {
       icon: Brain,
       title: 'gojiRx 2.0',
       subtitle: 'AI-Powered Claims Processing',
-      description: 'Revolutionize medical claims processing with our AI-powered solution. gojiRx 2.0 streamlines billing, reduces administrative tasks by up to 80%, and ensures faster reimbursements for healthcare providers.',
+      description: (
+        <>
+          Cannabinoid-based wellness deserves the same digital infrastructure as any other therapeutic area. gojiRx<sup className="text-[0.65em] align-super">™</sup> is Canada’s first intelligent claims platform for covered cannabinoid therapies.
+        </>
+      ),
       features: ['Automated Review', 'Error Detection', 'Fast Processing', 'Compliance Check'],
       image: '/images/gojiRx.png',
       link: '/gojirx'
@@ -24,19 +28,14 @@ const Services = () => {
       icon: Leaf,
       title: 'guideRx',
       subtitle: 'Cannabis Wellness Navigator',
-      description: 'Empower cannabis producers and retailers with AI-driven wellness recommendations. Our platform matches client needs with optimal products, leveraging clinical research and a comprehensive product database.',
+      description: (
+        <>
+          guideRx<sup className="text-[0.65em] align-super">™</sup> is a wellness navigation tool built to support cannabinoid therapy decisions. It empowers retailers, wellness seekers, and patients alike with clinical data, real-world outcomes, and personalized product matching.
+        </>
+      ),
       features: ['Personalized Plans', 'Clinical Research', 'Product Matching', 'Wellness Guidance'],
       image: '/images/guideRx.png',
       link: '/guiderx'
-    },
-    {
-      icon: Smartphone,
-      title: 'claimRx',
-      subtitle: 'Consumer Claims App',
-      description: 'Streamline cannabis purchase tracking and insurance claims for patients and consumers. claimRx offers an intuitive mobile app for expense logging, automated claim submissions, and secure documentation management.',
-      features: ['Easy Submission', 'Real-time Tracking', 'Document Upload', 'Secure Management'],
-      image: '/images/claimRx.png',
-      link: '/claimrx'
     }
   ]
 
@@ -162,7 +161,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div ref={servicesGridRef} className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div ref={servicesGridRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 justify-items-center">
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
@@ -186,7 +185,17 @@ const Services = () => {
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-xl lg:text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
-                      {service.title}
+                      {service.link === '/guiderx' ? (
+                        <>
+                          guideRx<sup className="text-[0.65em] align-super">™</sup>
+                        </>
+                      ) : service.link === '/gojirx' ? (
+                        <>
+                          gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                        </>
+                      ) : (
+                        service.title
+                      )}
                     </h3>
                     <p className="text-accent text-sm font-medium uppercase tracking-wider">
                       {service.subtitle}

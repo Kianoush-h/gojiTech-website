@@ -26,12 +26,6 @@ const Hero = () => {
       subtitle: 'Cannabis Wellness Navigator',
       image: '/images/guideRx.png',
       link: '/guiderx'
-    },
-    {
-      title: 'claimRx',
-      subtitle: 'Consumer Claims App',
-      image: '/images/claimRx.png',
-      link: '/claimrx'
     }
   ]
 
@@ -275,9 +269,17 @@ const Hero = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:from-accent/20 transition-all duration-500"></div>
                       
-                      {/* Product info overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/80 to-transparent">
-                        <h3 className="text-lg font-bold mb-1">{products[0].title}</h3>
+                       {/* Product info overlay */}
+                       <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-gradient-to-t from-black/80 to-transparent">
+                         <h3 className="text-lg font-bold mb-1">
+                           {products[0].link === '/gojirx' ? (
+                             <>
+                               gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                             </>
+                           ) : (
+                             products[0].title
+                           )}
+                         </h3>
                         <p className="text-accent text-xs font-medium uppercase tracking-wider">
                           {products[0].subtitle}
                         </p>
@@ -310,10 +312,18 @@ const Hero = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent group-hover:from-accent/20 transition-all duration-500"></div>
                     
-                    {/* Hover overlay with product info */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
-                      <div className="p-6 text-white">
-                        <h3 className="text-2xl font-bold mb-2">{products[0].title}</h3>
+                     {/* Hover overlay with product info */}
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                       <div className="p-6 text-white">
+                         <h3 className="text-2xl font-bold mb-2">
+                           {products[0].link === '/gojirx' ? (
+                             <>
+                               gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                             </>
+                           ) : (
+                             products[0].title
+                           )}
+                         </h3>
                         <p className="text-accent text-sm font-medium uppercase tracking-wider mb-2">
                           {products[0].subtitle}
                         </p>
@@ -353,7 +363,15 @@ const Hero = () => {
                     {/* Hover overlay with product info */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
                       <div className="p-6 text-white">
-                        <h3 className="text-2xl font-bold mb-2">{products[1].title}</h3>
+                         <h3 className="text-2xl font-bold mb-2">
+                           {products[1].link === '/guiderx' ? (
+                             <>
+                               guideRx<sup className="text-[0.65em] align-super">™</sup>
+                             </>
+                           ) : (
+                             products[1].title
+                           )}
+                         </h3>
                         <p className="text-accent text-sm font-medium uppercase tracking-wider mb-2">
                           {products[1].subtitle}
                         </p>

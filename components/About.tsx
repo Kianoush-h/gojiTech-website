@@ -98,14 +98,12 @@ const About = () => {
           <div ref={leftContentRef}>
             <div className="mb-6">
               <span className="text-accent font-mono text-sm uppercase tracking-wider">
-                About gojitech
+              Who We Are & Why It Matters
               </span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 lg:mb-8 leading-tight">
-              <span className="block sm:inline">Innovating </span>
-              <span 
-                className="block sm:inline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold"
+            <p
+                className="font-semibold text-3xl lg:text-4xl mb-4"
                 style={{
                   background: 'linear-gradient(135deg, #00ff88, #0ea5e9, #3B82F6, #06B6D4, #00ff88)',
                   backgroundSize: '200% auto',
@@ -115,33 +113,28 @@ const About = () => {
                   animation: 'aurora 4s ease-in-out infinite'
                 }}
               >
-                Healthcare
-              </span>{' '}
-              <span className="block sm:inline">Through </span>
-              <span 
-                className="inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold"
-                style={{
-                  background: 'linear-gradient(135deg, #00ff88, #0ea5e9, #3B82F6, #06B6D4, #00ff88)',
-                  backgroundSize: '200% auto',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  animation: 'aurora 4s ease-in-out infinite'
-                }}
-              >
-                AI
-              </span>
-            </h2>
+                Wellness Through Innovation
+              </p>
             
             <div className="text-dark-600 text-base lg:text-lg leading-relaxed space-y-4">
               <p>
-                gojitech is at the forefront of healthcare innovation, leveraging artificial intelligence 
-                to streamline processes and improve patient outcomes. Our comprehensive suite of solutions 
-                addresses the most pressing challenges in modern healthcare.
+                At gojitech™, we’re reshaping access to cannabinoid-based therapies. Our platform removes financial barriers and guides wellness seekers and patients through their health and wellness journey—safely, confidently, and backed by evidence.
+              </p>
+              <p
+                className="font-semibold text-3xl lg:text-4xl mb-4"
+                style={{
+                  background: 'linear-gradient(135deg, #00ff88, #0ea5e9, #3B82F6, #06B6D4, #00ff88)',
+                  backgroundSize: '200% auto',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  animation: 'aurora 4s ease-in-out infinite'
+                }}
+              >
+                Access Without Upfront Cost
               </p>
               <p>
-                From intelligent claims processing to personalized wellness guidance, we're building 
-                the future of healthcare technology with a focus on efficiency, accuracy, and accessibility.
+                For too long, patients using cannabinoid therapies have paid out of pocket and waited weeks for reimbursement. gojiRx™ changes that—with real-time benefit coordination and seamless pharmacy integration.
               </p>
             </div>
           </div>
@@ -170,7 +163,7 @@ const About = () => {
         </div>
 
         {/* Core Values Section */}
-        <div className="mt-16 lg:mt-20 pt-16 lg:pt-20 border-t border-dark-300">
+        <div className="mt-16 lg:mt-20 pt-16 lg:pt-20 border-t border-transparent">
           <div className="text-center mb-12 lg:mb-16">
             <h3 className="text-3xl lg:text-4xl font-display font-bold mb-6">
               Our Core Values

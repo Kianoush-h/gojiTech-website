@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, Leaf, Brain, Users, Shield, Target, CheckCircle, Zap, BarChart } from 'lucide-react'
+import { ArrowLeft, Leaf, Brain, Users, Shield, Target, CheckCircle, Zap, BarChart, FileDown } from 'lucide-react'
 import GlobalBackground from '@/components/GlobalBackground'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -106,13 +106,14 @@ const GuideRxPage = () => {
                   
                   <h1 className="text-6xl lg:text-7xl font-display font-bold mb-8 leading-tight">
                     <span className="gradient-text">guideRx</span>
+                    <span className="gradient-text align-super text-[0.5em] ml-1">™</span>
                   </h1>
                   
                   <p className="text-xl text-dark-600 mb-8 leading-relaxed">
                     Cannabis Wellness Navigator that empowers producers and retailers with AI-driven 
                     wellness recommendations, leveraging clinical research and comprehensive product databases.
                   </p>
-                  
+
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/#contact" className="btn-primary">
                       Get Started
@@ -121,6 +122,8 @@ const GuideRxPage = () => {
                       Explore Features
                     </Link>
                   </div>
+
+                  
                 </div>
 
                 <div className="relative">
@@ -132,6 +135,38 @@ const GuideRxPage = () => {
                       height={400}
                       className="w-full h-auto rounded-2xl shadow-2xl"
                     />
+                  </div>
+                </div>
+              </div>
+
+              {/* Full-width Brochures Row */}
+              <div className="mt-10">
+                <div className="bg-transparent border border-dark-300/30 rounded-2xl p-8">
+                  <div className="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-2">Download Brochures</h3>
+                      <p className="text-dark-600">
+                        Learn more about guideRx<sup className="text-[0.75em] align-super">™</sup> with focused overviews tailored for clinical users and wellness seekers.
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-4 md:justify-end md:items-end">
+                      <a
+                        href="/guideRx%20Brochure%20Clinical%20Users%20Final.pdf"
+                        download
+                        className="btn-secondary inline-flex items-center justify-center gap-2 min-w-[260px] w-full md:w-auto px-8 py-4"
+                      >
+                        <FileDown className="w-4 h-4" />
+                        <span>Clinical Users PDF</span>
+                      </a>
+                      <a
+                        href="/guideRx%20Brochure%20Wellness%20Seekers%20Final.pdf"
+                        download
+                        className="btn-secondary inline-flex items-center justify-center gap-2 min-w-[260px] w-full md:w-auto px-8 py-4"
+                      >
+                        <FileDown className="w-4 h-4" />
+                        <span>Wellness Seekers PDF</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -175,6 +210,73 @@ const GuideRxPage = () => {
             </div>
           </section>
 
+          {/* Insights - Two Posts Side by Side */}
+          <section id="insights" className="section-padding bg-transparent">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-10">
+                <span className="text-accent text-sm font-medium uppercase tracking-wider">guideRx<sup className="text-[0.65em] align-super">™</sup> Insight</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Post 1 */}
+                <div className="bg-transparent border border-dark-300/30 rounded-2xl p-8 md:p-10">
+                  <div className="text-center mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-display font-bold mt-3 mb-3">
+                      The Future of Wellness is <span className="gradient-text">Cannabinoid-Informed</span>
+                    </h2>
+                    <p className="text-dark-600 text-base lg:text-lg">
+                      Why personalized cannabinoid care is the next frontier in wellness
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 text-dark-600 text-base lg:text-lg leading-relaxed">
+                    <p>
+                      The wellness world is shifting, from generic solutions to deeply personalized care.
+                    </p>
+                    <p>
+                      One emerging area of focus is cannabinoid-informed wellness. Cannabinoids like CBD and THC have demonstrated the potential to support symptoms tied to sleep, anxiety, stress, inflammation, and chronic pain. Yet wellness seekers and patients often navigate this space without the guidance they deserve.
+                    </p>
+                    <p>
+                      That’s where technology meets the moment. Platforms like guideRx™ help bridge the gap between evidence and experience, enabling people to align their health goals with scientifically-backed cannabinoid products. Instead of relying on trial-and-error or anecdotal advice, wellness seekers can now explore wellness options supported by research and real-world outcomes.
+                    </p>
+                    <p>
+                      By focusing on wellness, not just cannabis, gojitech™ is helping to redefine cannabinoid care as an integrated, data-driven part of the wellness and health journey.
+                    </p>
+                  </div>
+
+                </div>
+
+                {/* Post 2 */}
+                <div className="bg-transparent border border-dark-300/30 rounded-2xl p-8 md:p-10">
+                  <div className="text-center mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-display font-bold mt-3 mb-3">
+                      Empowering Retailers in the <span className="gradient-text">Wellness Revolution</span>
+                    </h2>
+                    <p className="text-dark-600 text-base lg:text-lg">
+                      How dispensaries and pharmacies can elevate their role in cannabinoid care
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 text-dark-600 text-base lg:text-lg leading-relaxed">
+                    <p>
+                      Dispensaries are no longer just points of sale, they’re wellness hubs. Consumers / wellness seekers are increasingly seeking guidance on which cannabinoid products are right for their needs, but most dispensary staff are under-equipped to offer personalized recommendations rooted in science/evidence.
+                    </p>
+                    <p>
+                      guideRx<sup className="text-[0.65em] align-super">™</sup> gives retail teams a new edge. It turns staff into wellness guides, offering tools that match customer goals to product profiles based on scientific literature and real-world outcomes. The result? More trust, higher engagement, and increased customer loyalty.
+                    </p>
+                    <p>
+                      Retailers who adopt this model don’t just move wellness outcomes and their products, they move the industry forward.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/#contact" className="btn-secondary">Talk to Our Team</Link>
+                <Link href="#features" className="btn-secondary">Explore Features</Link>
+              </div>
+            </div>
+          </section>
+
           {/* Benefits Section */}
           <section className="section-padding bg-transparent">
             <div className="container mx-auto px-6">
@@ -205,9 +307,9 @@ const GuideRxPage = () => {
                     <p className="text-dark-600 leading-relaxed text-lg">
                       {benefit.description}
                     </p>
-                    <div className="mt-6 pt-6 border-t border-dark-300/30">
+                    {/* <div className="mt-6 pt-6 border-t border-dark-300/30">
                       <CheckCircle className="w-6 h-6 text-accent" />
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>
@@ -219,7 +321,7 @@ const GuideRxPage = () => {
             <div className="container mx-auto px-6">
               <div className="text-center mb-20">
                 <h2 className="text-5xl lg:text-6xl font-display font-bold mb-8">
-                  How <span className="gradient-text">guideRx</span> Works
+                  How <span className="gradient-text">guideRx</span><span className="gradient-text align-super text-[0.5em] ml-1">™</span> Works
                 </h2>
               </div>
 
@@ -256,6 +358,8 @@ const GuideRxPage = () => {
               </div>
             </div>
           </section>
+
+          
 
           {/* CTA Section */}
           <section className="section-padding bg-transparent">
