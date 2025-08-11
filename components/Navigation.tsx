@@ -104,6 +104,14 @@ const Navigation = () => {
               About
             </button>
 
+            {/* Meet With Us */}
+            <Link
+              href="/meet-with-us"
+              className="nav-link text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors duration-300"
+            >
+              Meet With Us
+            </Link>
+
             {/* Solutions Dropdown */}
             <div className="relative">
               <button
@@ -305,6 +313,15 @@ const Navigation = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Meet With Us */}
+              <Link
+                href="/meet-with-us"
+                onClick={() => setIsOpen(false)}
+                className="nav-link text-sm font-medium uppercase tracking-wider py-3 px-4 hover:text-accent hover:bg-accent/10 transition-all duration-300 text-left rounded-lg"
+              >
+                Meet With Us
+              </Link>
 
               <button 
                 onClick={() => handleNavigation('#contact')}
