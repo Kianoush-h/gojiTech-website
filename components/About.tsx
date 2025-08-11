@@ -150,12 +150,12 @@ const About = () => {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="text-center p-4 rounded-lg bg-dark-100 border border-dark-300">
-                  <div className="text-xl lg:text-2xl font-bold gradient-text mb-2">AI-Powered</div>
-                  <div className="text-dark-600 text-sm">Solutions</div>
+                  <div className="text-xl lg:text-2xl font-bold gradient-text mb-2">AI-Powered Solutions</div>
+                  {/* <div className="text-dark-600 text-sm">Solutions</div> */}
                 </div>
                 <div className="text-center p-4 rounded-lg bg-dark-100 border border-dark-300">
-                  <div className="text-xl lg:text-2xl font-bold gradient-text mb-2">Healthcare</div>
-                  <div className="text-dark-600 text-sm">Innovation</div>
+                  <div className="text-xl lg:text-2xl font-bold gradient-text mb-2">Healthcare Innovation</div>
+                  {/* <div className="text-dark-600 text-sm">Innovation</div> */}
                 </div>
               </div>
             </div>
