@@ -32,7 +32,7 @@ const GuideRxPage = () => {
     {
       icon: Brain,
       title: 'AI-Powered Recommendations',
-      description: 'Leverage advanced AI to match client needs with optimal cannabis products based on clinical research.'
+      description: 'Leverage advanced AI to match client needs with optimal cannabis formulations based on clinical research.'
     },
     {
       icon: Target,
@@ -51,13 +51,13 @@ const GuideRxPage = () => {
     },
     {
       icon: Shield,
-      title: 'Compliance & Safety',
+      title: 'Compliance and Safety',
       description: 'Ensure all recommendations meet regulatory requirements and safety standards.'
     },
     {
       icon: Zap,
       title: 'Real-time Insights',
-      description: 'Get instant insights into product effectiveness and patient outcomes.'
+      description: 'Get instant insights into therapeutic effectiveness and patient outcomes.'
     }
   ]
 
@@ -129,7 +129,8 @@ const GuideRxPage = () => {
                 <div className="relative">
                   <div className="relative w-full max-w-lg mx-auto">
                     <Image
-                      src="/images/guideRx.png"
+                      // src="/images/guideRx.png"
+                      src="/images/search2.png"
                       alt="guideRx Cannabis Wellness Navigator"
                       width={600}
                       height={400}
@@ -140,7 +141,7 @@ const GuideRxPage = () => {
               </div>
 
               {/* Full-width Brochures Row */}
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <div className="bg-transparent border border-dark-300/30 rounded-2xl p-8">
                   <div className="grid md:grid-cols-2 gap-8 items-start">
                     <div>
@@ -169,7 +170,7 @@ const GuideRxPage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
@@ -181,8 +182,8 @@ const GuideRxPage = () => {
                   Intelligent <span className="gradient-text">Wellness Navigation</span>
                 </h2>
                 <p className="text-dark-600 text-xl max-w-3xl mx-auto">
-                  Transform how you recommend cannabis products with AI-powered insights 
-                  and evidence-based wellness guidance.
+                Transform how you research cannabis product formulations with AI-powered insights and evidence-based wellness guidance.
+
                 </p>
               </div>
 

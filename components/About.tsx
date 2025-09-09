@@ -98,7 +98,7 @@ const About = () => {
           <div ref={leftContentRef}>
             <div className="mb-6">
               <span className="text-accent font-mono text-sm uppercase tracking-wider">
-              Who We Are & Why It Matters
+              Who We Are And Why It Matters
               </span>
             </div>
             
@@ -134,7 +134,7 @@ const About = () => {
                 Access Without Upfront Cost
               </p>
               <p>
-                For too long, patients using cannabinoid therapies have paid out of pocket and waited weeks for reimbursement. gojiRx™ changes that—with real-time benefit coordination and seamless pharmacy integration.
+                For too long, patients using cannabinoid therapies have paid out of pocket and waited weeks for reimbursement. claimRx™ changes that with real-time benefit coordination and seamless pharmacy integration.
               </p>
             </div>
           </div>

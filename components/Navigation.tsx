@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -13,7 +12,7 @@ const Navigation = () => {
   const pathname = usePathname()
 
   const isHomePage = pathname === '/'
-  const isProductPage = ['/gojirx', '/guiderx'].includes(pathname)
+  const isProductPage = ['/gojirx', '/guiderx', '/selectrx', '/pharmacy-network', '/formulary'].includes(pathname)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,8 +34,11 @@ const Navigation = () => {
   }, [isDropdownOpen])
 
   const products = [
-    { name: 'gojiRx 2.0', href: '/gojirx', description: 'AI-Powered Claims Processing' },
-    { name: 'guideRx', href: '/guiderx', description: 'Cannabis Wellness Navigator' }
+    { name: 'claimRx 2.0', href: '/gojirx', description: 'AI-Powered Claims Processing' },
+    { name: 'guideRx', href: '/guiderx', description: 'Cannabis Wellness Navigator' },
+    { name: 'selectRx', href: '/selectrx', description: 'Intelligent Product Selection' },
+    { name: 'Pharmacy Network', href: '/pharmacy-network', description: 'Trusted Partner Network' },
+    { name: 'Formulary (coming soon)', href: '/formulary', description: 'Evidence-Based Coverage' }
   ]
 
   const handleNavigation = (href: string) => {
@@ -76,13 +78,10 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <button onClick={handleLogoClick} className="flex items-center">
-              <Image
-                src="/images/gojitech-logo.png"
-                alt="gojiTech"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
-              />
+              <span className="text-6xl font-bold" style={{ color: '#11636D' }}>
+                gojitech
+              </span>
+              <sup className="text-[1.1em] align-super ml-1" style={{ color: '#11636D' }}>™</sup>
             </button>
           </div>
 
@@ -105,12 +104,12 @@ const Navigation = () => {
             </button>
 
             {/* Meet With Us */}
-            <Link
+            {/* <Link
               href="/meet-with-us"
               className="nav-link text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors duration-300"
             >
               Meet With Us
-            </Link>
+            </Link> */}
 
             {/* Solutions Dropdown */}
             <div className="relative">
@@ -136,34 +135,59 @@ const Navigation = () => {
               {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-80 bg-dark-100/95 backdrop-blur-md border border-dark-300 rounded-lg shadow-lg py-2">
-                  {products.map((product, index) => (
-                    <Link
-                      key={index}
-                      href={product.href}
-                      onClick={() => {
-                        setIsDropdownOpen(false)
-                        setIsOpen(false)
-                      }}
-                      className="block px-4 py-3 hover:bg-accent/10 transition-colors"
-                    >
-                      <div className="text-sm font-medium text-dark-900 hover:text-accent">
-                        {product.href === '/guiderx' ? (
-                          <>
-                            guideRx<sup className="text-[0.65em] align-super">™</sup>
-                          </>
-                        ) : product.href === '/gojirx' ? (
-                          <>
-                            gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
-                          </>
-                        ) : (
-                          product.name
-                        )}
+                  {products.map((product, index) => {
+                    const isFormulary = product.href === '/formulary'
+                    
+                    const content = (
+                      <>
+                        <div className="text-sm font-medium text-dark-900 hover:text-accent">
+                          {product.href === '/guiderx' ? (
+                            <>
+                              guideRx<sup className="text-[0.65em] align-super">™</sup>
+                            </>
+                          ) : product.href === '/gojirx' ? (
+                            <>
+                              claimRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                            </>
+                          ) : product.href === '/selectrx' ? (
+                            <>
+                              selectRx<sup className="text-[0.65em] align-super">™</sup>
+                            </>
+                          ) : product.href === '/formulary' ? (
+                            <>
+                              Formulary (coming soon)
+                            </>
+                          ) : (
+                            product.name
+                          )}
+                        </div>
+                        <div className="text-xs text-dark-600 mt-1">
+                          {product.description}
+                        </div>
+                      </>
+                    )
+
+                    return isFormulary ? (
+                      <div
+                        key={index}
+                        className="block px-4 py-3 hover:bg-accent/10 transition-colors cursor-default"
+                      >
+                        {content}
                       </div>
-                      <div className="text-xs text-dark-600 mt-1">
-                        {product.description}
-                      </div>
-                    </Link>
-                  ))}
+                    ) : (
+                      <Link
+                        key={index}
+                        href={product.href}
+                        onClick={() => {
+                          setIsDropdownOpen(false)
+                          setIsOpen(false)
+                        }}
+                        className="block px-4 py-3 hover:bg-accent/10 transition-colors"
+                      >
+                        {content}
+                      </Link>
+                    )
+                  })}
                   <div className="border-t border-dark-300 mt-2 pt-2">
                     <button
                       onClick={() => {
@@ -271,32 +295,57 @@ const Navigation = () => {
                   isDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="ml-4 mt-2 space-y-1 border-l border-dark-300/50 pl-4">
-                    {products.map((product, index) => (
-                      <Link
-                        key={index}
-                        href={product.href}
-                        onClick={() => {
-                          setIsDropdownOpen(false)
-                          setIsOpen(false)
-                        }}
-                        className="block py-3 px-3 text-sm text-dark-600 hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-lg"
-                      >
-                        <div className="font-medium">
-                          {product.href === '/guiderx' ? (
-                            <>
-                              guideRx<sup className="text-[0.65em] align-super">™</sup>
-                            </>
-                          ) : product.href === '/gojirx' ? (
-                            <>
-                              gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
-                            </>
-                          ) : (
-                            product.name
-                          )}
+                    {products.map((product, index) => {
+                      const isFormulary = product.href === '/formulary'
+                      
+                      const content = (
+                        <>
+                          <div className="font-medium">
+                            {product.href === '/guiderx' ? (
+                              <>
+                                guideRx<sup className="text-[0.65em] align-super">™</sup>
+                              </>
+                            ) : product.href === '/gojirx' ? (
+                              <>
+                                claimRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                              </>
+                            ) : product.href === '/selectrx' ? (
+                              <>
+                                selectRx<sup className="text-[0.65em] align-super">™</sup>
+                              </>
+                            ) : product.href === '/formulary' ? (
+                              <>
+                                Formulary<sup className="text-[0.65em] align-super">™</sup> (coming soon)
+                              </>
+                            ) : (
+                              product.name
+                            )}
+                          </div>
+                          <div className="text-xs text-dark-500 mt-1">{product.description}</div>
+                        </>
+                      )
+
+                      return isFormulary ? (
+                        <div
+                          key={index}
+                          className="block py-3 px-3 text-sm text-dark-600 hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-lg cursor-default"
+                        >
+                          {content}
                         </div>
-                        <div className="text-xs text-dark-500 mt-1">{product.description}</div>
-                      </Link>
-                    ))}
+                      ) : (
+                        <Link
+                          key={index}
+                          href={product.href}
+                          onClick={() => {
+                            setIsDropdownOpen(false)
+                            setIsOpen(false)
+                          }}
+                          className="block py-3 px-3 text-sm text-dark-600 hover:text-accent hover:bg-accent/10 transition-all duration-300 rounded-lg"
+                        >
+                          {content}
+                        </Link>
+                      )
+                    })}
                     <div className="border-t border-dark-300/50 mt-2 pt-2">
                       <button
                         onClick={() => {
@@ -315,13 +364,13 @@ const Navigation = () => {
               </div>
 
               {/* Meet With Us */}
-              <Link
+              {/* <Link
                 href="/meet-with-us"
                 onClick={() => setIsOpen(false)}
                 className="nav-link text-sm font-medium uppercase tracking-wider py-3 px-4 hover:text-accent hover:bg-accent/10 transition-all duration-300 text-left rounded-lg"
               >
                 Meet With Us
-              </Link>
+              </Link> */}
 
               <button 
                 onClick={() => handleNavigation('#contact')}

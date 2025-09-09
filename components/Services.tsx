@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { Brain, FileText, Leaf, Smartphone } from 'lucide-react'
+import { Brain, FileText, Leaf, Smartphone, Target, Store, BookOpen } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -13,11 +13,11 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: 'gojiRx 2.0',
+      title: 'claimRx 2.0',
       subtitle: 'AI-Powered Claims Processing',
       description: (
         <>
-          Cannabinoid-based wellness deserves the same digital infrastructure as any other therapeutic area. gojiRx<sup className="text-[0.65em] align-super">™</sup> is Canada’s first intelligent claims platform for covered cannabinoid therapies.
+          Cannabinoid-based wellness deserves the same digital infrastructure as any other therapeutic service. ClaimRx is Canada's first intelligent claims platform for covered cannabinoid therapies.
         </>
       ),
       features: ['Automated Review', 'Error Detection', 'Fast Processing', 'Compliance Check'],
@@ -30,12 +30,53 @@ const Services = () => {
       subtitle: 'Cannabis Wellness Navigator',
       description: (
         <>
-          guideRx<sup className="text-[0.65em] align-super">™</sup> is a wellness navigation tool built to support cannabinoid therapy decisions. It empowers retailers, wellness seekers, and patients alike with clinical data, real-world outcomes, and personalized product matching.
+          GuideRx is a wellness navigation tool to consolidate the scientific body-of-knowledge on cannabinoids in the user’s finger tips.  It empowers wellness seekers, healthcare professionals, and educators alike with research summaries, links to the literature, and personalized product formulations. 
         </>
       ),
       features: ['Personalized Plans', 'Clinical Research', 'Product Matching', 'Wellness Guidance'],
-      image: '/images/guideRx.png',
+      image: '/images/search2.png',
       link: '/guiderx'
+    },
+    {
+      icon: Target,
+      title: 'selectRx',
+      subtitle: 'Intelligent Product Selection',
+      description: (
+        <>
+          SelectRx is a retail catalogue management system that eliminates the confusion in selecting products from large catalogues or formularies that wellness seekers typically find overwhelming.  Product formulations and wellness seekers’ purchase preferences instantly filter out the catalogue or formulary to provide a concise list of products that meet the wellness seeker’s needs.
+        </>
+      ),
+      features: ['Product Discovery', 'AI Matching', 'Real-time Analytics', 'Quality Assurance'],
+      image: '/images/guideRx.png',
+      link: '/selectrx'
+    },
+    {
+      icon: Store,
+      title: 'Pharmacy Network',
+      subtitle: 'Pharmacy-Led Circle of Care',
+      description: (
+        <>
+          Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply received the registration, medical document and subsequent orders. The program reach is over 85% of pharmacies in British Columbia and 65% or pharmacies in English Canada. <br /><br />
+          <span className="text-accent font-medium">Powered by 36Eight Technologies</span>
+        </>
+      ),
+      features: ['Circle of Care', 'Physician Integration', 'Pharmacy Management', 'Wide Network Reach'],
+      image: '/images/CRIS.png',
+      link: '/pharmacy-network'
+    },
+    {
+      icon: BookOpen,
+      title: 'Formulary',
+      subtitle: 'AI-Maintained Formulary (Coming Soon)',
+      description: (
+        <>
+          
+          An AI-maintained formulary driven by the GuideRx knowledge base and reviewed by an independent advisory group.  Ingested into the SelectRx catalogue management system, the formulary standard will provide the platform for insurers to expand cannabinoid therapy beyond health spending accounts as pharmacoeconomic study demonstrate the business case for such therapies; all expanding market size and reach for Licensed Sellers.
+        </>
+      ),
+      features: ['AI-Maintained', 'Knowledge Base Driven', 'Independent Review', 'Insurance Integration'],
+      image: '/images/coming-soon3.jpg',
+      link: '/formulary'
     }
   ]
 
@@ -161,78 +202,173 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div ref={servicesGridRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 justify-items-center">
-          {services.map((service, index) => {
-            const IconComponent = service.icon
-            return (
-              <Link 
-                key={index}
-                href={service.link}
-                className="group hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden bg-transparent border border-dark-300/30 rounded-2xl p-6 lg:p-8 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 block"
-              >
-                {/* Product Image */}
-                <div className="relative w-full max-w-80 h-60 sm:h-80 mx-auto mb-6 rounded-lg sm:rounded-full overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
-                  />
-                </div>
+        <div ref={servicesGridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
+          {/* First 3 items */}
+          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
+            {services.slice(0, 3).map((service, index) => {
+              const IconComponent = service.icon
+              return (
+                <Link 
+                  key={index}
+                  href={service.link}
+                  className="group hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden bg-transparent border border-dark-300/30 rounded-2xl p-6 lg:p-8 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 block"
+                >
+                  {/* Product Image */}
+                  <div className="relative w-full max-w-80 h-60 sm:h-80 mx-auto mb-6 rounded-lg sm:rounded-full overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
+                    />
+                  </div>
 
-                {/* Content */}
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
-                      {service.link === '/guiderx' ? (
-                        <>
-                          guideRx<sup className="text-[0.65em] align-super">™</sup>
-                        </>
-                      ) : service.link === '/gojirx' ? (
-                        <>
-                          gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
-                        </>
-                      ) : (
-                        service.title
-                      )}
-                    </h3>
-                    <p className="text-accent text-sm font-medium uppercase tracking-wider">
-                      {service.subtitle}
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-xl lg:text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
+                        {service.link === '/guiderx' ? (
+                          <>
+                            guideRx<sup className="text-[0.65em] align-super">™</sup>
+                          </>
+                        ) : service.link === '/gojirx' ? (
+                          <>
+                            claimRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                          </>
+                        ) : service.link === '/selectrx' ? (
+                          <>
+                            selectRx<sup className="text-[0.65em] align-super">™</sup>
+                          </>
+                        ) : (
+                          service.title
+                        )}
+                      </h3>
+                      <p className="text-accent text-sm font-medium uppercase tracking-wider">
+                        {service.subtitle}
+                      </p>
+                    </div>
+                    
+                    <p className="text-dark-600 leading-relaxed text-sm lg:text-base">
+                      {service.description}
                     </p>
-                  </div>
-                  
-                  <p className="text-dark-600 leading-relaxed text-sm lg:text-base">
-                    {service.description}
-                  </p>
 
-                  {/* Features */}
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li 
-                        key={featureIndex}
-                        className="text-sm text-dark-600 flex items-center"
-                      >
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Features */}
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li 
+                          key={featureIndex}
+                          className="text-sm text-dark-600 flex items-center"
+                        >
+                          <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
 
-                  {/* Learn More Indicator */}
-                  <div className="pt-4">
-                    <span className="text-accent font-medium text-sm flex items-center group-hover:translate-x-1 transition-transform">
-                      Learn More 
-                      <span className="ml-2">→</span>
-                    </span>
+                    {/* Learn More Indicator */}
+                    <div className="pt-4">
+                      <span className="text-accent font-medium text-sm flex items-center group-hover:translate-x-1 transition-transform">
+                        Learn More 
+                        <span className="ml-2">→</span>
+                      </span>
+                    </div>
                   </div>
+
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
+                </Link>
+              )
+            })}
+          </div>
+          
+          {/* Last 2 items */}
+          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full justify-items-center">
+            {services.slice(3).map((service, index) => {
+              const IconComponent = service.icon
+              const isFormulary = service.link === '/formulary'
+              
+              const cardContent = (
+                <>
+                  {/* Product Image */}
+                  <div className="relative w-full max-w-80 h-60 sm:h-80 mx-auto mb-6 rounded-lg sm:rounded-full overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-xl lg:text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
+                        {service.link === '/formulary' ? (
+                          <>
+                            Formulary<sup className="text-[0.65em] align-super">™</sup>
+                          </>
+                        ) : (
+                          service.title
+                        )}
+                      </h3>
+                      <p className="text-accent text-sm font-medium uppercase tracking-wider">
+                        {service.subtitle}
+                      </p>
+                    </div>
+                    
+                    <p className="text-dark-600 leading-relaxed text-sm lg:text-base">
+                      {service.description}
+                    </p>
+
+                    {/* Features */}
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li 
+                          key={featureIndex}
+                          className="text-sm text-dark-600 flex items-center"
+                        >
+                          <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3 flex-shrink-0"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Learn More Indicator - Only show if not Formulary */}
+                    {!isFormulary && (
+                      <div className="pt-4">
+                        <span className="text-accent font-medium text-sm flex items-center group-hover:translate-x-1 transition-transform">
+                          Learn More 
+                          <span className="ml-2">→</span>
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
+                </>
+              )
+
+              return isFormulary ? (
+                <div 
+                  key={index + 3}
+                  className="group hover:scale-105 transition-all duration-500 relative overflow-hidden bg-transparent border border-dark-300/30 rounded-2xl p-6 lg:p-8 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 block max-w-md cursor-default"
+                >
+                  {cardContent}
                 </div>
-
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
-              </Link>
-            )
-          })}
+              ) : (
+                <Link 
+                  key={index + 3}
+                  href={service.link}
+                  className="group hover:scale-105 transition-all duration-500 cursor-pointer relative overflow-hidden bg-transparent border border-dark-300/30 rounded-2xl p-6 lg:p-8 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 block max-w-md"
+                >
+                  {cardContent}
+                </Link>
+              )
+            })}
+          </div>
         </div>
 
         {/* Call to Action */}

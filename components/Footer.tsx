@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="/gojirx" className="text-dark-600 hover:text-accent transition-colors">
-                  gojiRx<sup className="text-[0.65em] align-super">™</sup>
+                  claimRx<sup className="text-[0.65em] align-super">™</sup>
                 </a>
               </li>
               <li>
@@ -44,11 +44,21 @@ const Footer = () => {
                   guideRx<sup className="text-[0.65em] align-super">™</sup>
                 </a>
               </li>
-              {/* <li>
-                <a href="#services" className="text-dark-600 hover:text-accent transition-colors">
-                  Healthcare Analytics
+              <li>
+                <a href="/selectrx" className="text-dark-600 hover:text-accent transition-colors">
+                  selectRx<sup className="text-[0.65em] align-super">™</sup>
                 </a>
-              </li> */}
+              </li>
+              <li>
+                <a href="/pharmacy-network" className="text-dark-600 hover:text-accent transition-colors">
+                  Pharmacy Network
+                </a>
+              </li>
+              <li>
+                <a  className="text-dark-600 hover:text-accent transition-colors">
+                  Formulary
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -103,7 +113,7 @@ const Footer = () => {
         <div className="border-t border-dark-300 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-dark-600 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} gojitech. All rights reserved.
+              © {new Date().getFullYear()} Goji Technology Systems Inc. All rights reserved
             </div>
             
             {/* Social Links */}

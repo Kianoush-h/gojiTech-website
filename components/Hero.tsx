@@ -16,7 +16,7 @@ const Hero = () => {
 
   const products = [
     {
-      title: 'gojiRx 2.0',
+      title: 'claimRx 2.0',
       subtitle: 'AI-Powered Claims Processing',
       image: '/images/gojiRx.png',
       link: '/gojirx'
@@ -198,7 +198,7 @@ const Hero = () => {
               className="text-base sm:text-lg lg:text-xl text-dark-600 max-w-2xl leading-relaxed mx-auto lg:mx-0"
               style={{ opacity: 0, transform: 'translateY(50px)' }}
             >
-              Revolutionize healthcare management with gojitech's suite of AI-powered solutions: streamlined claims processing, cannabis wellness guidance, and consumer-friendly claim submission.
+              Revolutionize healthcare management with Gojitech's suite of AI-powered solutions: streamlined claims processing, cannabis wellness guidance, and catalogue and formulary management.
             </p>
 
             {/* Enhanced Action Button */}
@@ -248,7 +248,7 @@ const Hero = () => {
               {/* Mobile Layout - Stacked */}
               <div className="block lg:hidden w-full h-full">
                 <div className="grid grid-cols-1 gap-4 h-full">
-                  {/* gojiRx - Top */}
+                  {/* claimRx - Top */}
                   <div 
                     className="relative w-full h-full cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 group"
                     onClick={() => {
@@ -274,7 +274,7 @@ const Hero = () => {
                          <h3 className="text-lg font-bold mb-1">
                            {products[0].link === '/gojirx' ? (
                              <>
-                               gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                               claimRx<sup className="text-[0.65em] align-super">™</sup> 2.0
                              </>
                            ) : (
                              products[0].title
@@ -291,7 +291,7 @@ const Hero = () => {
 
               {/* Desktop Layout - Side by Side */}
               <div className="hidden lg:flex w-full h-full gap-8">
-                {/* gojiRx - Left side - Full height */}
+                {/* claimRx - Left side - Full height */}
                 <div 
                   className="relative w-80 h-full z-30 cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-accent/20 group"
                   onClick={() => {
@@ -318,7 +318,7 @@ const Hero = () => {
                          <h3 className="text-2xl font-bold mb-2">
                            {products[0].link === '/gojirx' ? (
                              <>
-                               gojiRx<sup className="text-[0.65em] align-super">™</sup> 2.0
+                               claimRx<sup className="text-[0.65em] align-super">™</sup> 2.0
                              </>
                            ) : (
                              products[0].title

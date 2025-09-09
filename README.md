@@ -17,14 +17,14 @@ A modern, award-winning portfolio website inspired by NK Studio's design, built 
 Our AI-powered healthcare solutions transform the industry with innovative features and capabilities:
 
 ### Dashboard Overview
-![GojiRx Dashboard](image1.png)
-The GojiRx dashboard provides comprehensive analytics and claims processing capabilities with an intuitive interface.
+![claimRx Dashboard](image1.png)
+The claimRx dashboard provides comprehensive analytics and claims processing capabilities with an intuitive interface.
 
 ### Product Suite
 ![GojiTech Solutions](image2.png)
 Our three flagship products work together to create a complete healthcare management ecosystem:
 
-- **gojiRx 2.0**: AI-powered claims processing system that streamlines billing and reduces administrative tasks
+- **claimRx 2.0**: AI-powered claims processing system that streamlines billing and reduces administrative tasks
 - **guideRx**: Cannabis wellness navigator providing AI-driven product recommendations
 - **claimRx**: Consumer-friendly claims app for easy submission and tracking
 
