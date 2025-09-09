@@ -34,7 +34,7 @@ const Services = () => {
         </>
       ),
       features: ['Personalized Plans', 'Clinical Research', 'Product Matching', 'Wellness Guidance'],
-      image: '/images/search2.png',
+      image: '/images/search3.png',
       link: '/guiderx'
     },
     {
@@ -47,7 +47,7 @@ const Services = () => {
         </>
       ),
       features: ['Product Discovery', 'AI Matching', 'Real-time Analytics', 'Quality Assurance'],
-      image: '/images/guideRx.png',
+      image: '/images/guideRx2.png',
       link: '/selectrx'
     },
     {
@@ -61,7 +61,7 @@ const Services = () => {
         </>
       ),
       features: ['Circle of Care', 'Physician Integration', 'Pharmacy Management', 'Wide Network Reach'],
-      image: '/images/CRIS.png',
+      image: '/images/middle.png',
       link: '/pharmacy-network'
     },
     {
@@ -307,7 +307,7 @@ const Services = () => {
                       <h3 className="text-xl lg:text-2xl font-bold mb-2 group-hover:text-accent transition-colors">
                         {service.link === '/formulary' ? (
                           <>
-                            Formulary<sup className="text-[0.65em] align-super">™</sup>
+                            Formulary
                           </>
                         ) : (
                           service.title

@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       senderAddress: "DoNotReply@gojitech.systems",
       recipients: {
         to: [{ 
-          address: "info@gojitech.co"
+          address: "info@gojitechsystems.com"
         }]
       },
       content: {

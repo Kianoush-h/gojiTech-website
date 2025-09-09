@@ -99,11 +99,11 @@ const Footer = () => {
                 </div>
               </div>
               <a 
-                href="mailto:info@gojitech.co" 
+                href="mailto:info@gojitechsystems.com" 
                 className="flex items-center text-dark-600 hover:text-accent transition-colors"
               >
                 <Mail className="w-4 h-4 mr-2" />
-                info@gojitech.co
+                info@gojitechsystems.com
               </a>
             </div>
           </div>

@@ -134,7 +134,7 @@ const Navigation = () => {
 
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-dark-100/95 backdrop-blur-md border border-dark-300 rounded-lg shadow-lg py-2">
+                <div className="absolute top-full top-8 left-0 mt-2 w-72 bg-dark-100/95 backdrop-blur-md border border-dark-300 rounded-lg shadow-lg py-2">
                   {products.map((product, index) => {
                     const isFormulary = product.href === '/formulary'
                     
@@ -198,7 +198,7 @@ const Navigation = () => {
                       className="block w-full px-4 py-3 hover:bg-accent/10 transition-colors text-left"
                     >
                       <div className="text-sm font-medium text-accent">
-                        View All Solutions
+                        Learn more about our solutions
                       </div>
                       <div className="text-xs text-dark-600 mt-1">
                         Explore our complete product suite
@@ -211,7 +211,7 @@ const Navigation = () => {
 
             <button 
               onClick={() => handleNavigation('#contact')}
-              className="group relative overflow-hidden font-medium px-8 py-3 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-accent/25 ml-4"
+              className="group relative overflow-hidden font-medium px-7 py-1 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-accent/25 ml-4"
               style={{
                 background: 'linear-gradient(135deg, #00ff88, #0ea5e9, #3B82F6, #06B6D4, #00ff88)',
                 backgroundSize: '200% auto',
@@ -374,7 +374,7 @@ const Navigation = () => {
 
               <button 
                 onClick={() => handleNavigation('#contact')}
-                className="group relative overflow-hidden font-medium px-6 py-4 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent/25 w-full mt-4 text-center"
+                className="group relative overflow-hidden font-medium px-5 py-3.5 rounded-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-accent/25 w-full mt-4 text-center"
                 style={{
                   background: 'linear-gradient(135deg, #00ff88, #0ea5e9, #3B82F6, #06B6D4, #00ff88)',
                   backgroundSize: '200% auto',

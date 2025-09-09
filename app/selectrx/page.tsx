@@ -92,7 +92,7 @@ const SelectRxPage = () => {
 
                 <div className="relative w-full max-w-lg mx-auto">
                     <Image
-                      src="/images/guideRx.png"
+                      src="/images/guideRx2.png"
                       // src="/images/search2.png"
                       alt="guideRx Cannabis Wellness Navigator"
                       width={600}

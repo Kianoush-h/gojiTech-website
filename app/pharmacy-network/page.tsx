@@ -101,12 +101,15 @@ const PharmacyNetworkPage = () => {
                   </div>
                 </div>
 
-                <div className="relative">
-                  <div className="relative w-full max-w-lg mx-auto">
-                    <div className="w-full h-96 bg-gradient-to-br from-accent/20 to-primary-500/20 rounded-2xl shadow-2xl flex items-center justify-center border border-accent/30">
-                      <Store className="w-24 h-24 text-accent" />
-                    </div>
-                  </div>
+                <div className="relative w-full max-w-lg mx-auto">
+                  <Image
+                    src="/images/middle.png"
+                    // src="/images/search2.png"
+                    alt="guideRx Cannabis Wellness Navigator"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto rounded-2xl shadow-2xl"
+                  />
                 </div>
               </div>
             </div>
