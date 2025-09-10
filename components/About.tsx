@@ -118,7 +118,7 @@ const About = () => {
             
             <div className="text-dark-600 text-base lg:text-lg leading-relaxed space-y-4">
               <p>
-                At gojitech™, we’re reshaping access to cannabinoid-based therapies. Our platform removes financial barriers and guides wellness seekers and patients through their health and wellness journey—safely, confidently, and backed by evidence.
+                At Gojitech, we’re reshaping access to cannabinoid-based therapies. Our platform removes financial barriers and guides wellness seekers and patients through their health and wellness journey—safely, confidently, and backed by evidence.
               </p>
               <p
                 className="font-semibold text-3xl lg:text-4xl mb-4"
@@ -134,7 +134,7 @@ const About = () => {
                 Access Without Upfront Cost
               </p>
               <p>
-                For too long, patients using cannabinoid therapies have paid out of pocket and waited weeks for reimbursement. claimRx™ changes that with real-time benefit coordination and seamless pharmacy integration.
+                For too long, patients using cannabinoid therapies have paid out of pocket and waited weeks for reimbursement. ClaimRx™ changes that with real-time benefit coordination and seamless pharmacy integration.
               </p>
             </div>
           </div>

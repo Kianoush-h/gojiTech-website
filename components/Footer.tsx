@@ -127,13 +127,13 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
+              {/* <a 
                 href="#" 
                 className="w-10 h-10 bg-dark-300 rounded-lg flex items-center justify-center text-dark-600 hover:bg-accent hover:text-dark-100 transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

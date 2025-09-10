@@ -37,7 +37,7 @@ const PharmacyNetworkPage = () => {
     {
       icon: MapPin,
       title: 'Access to Patients',
-      description: 'Enhanced access to medical programs where treatment modalities are more favorably accepted.'
+      description: 'Enhanced access to medical programs where treatment modalities are more favorably accepted'
     },
     {
       icon: Truck,
@@ -105,7 +105,7 @@ const PharmacyNetworkPage = () => {
                   <Image
                     src="/images/middle.png"
                     // src="/images/search2.png"
-                    alt="guideRx Cannabis Wellness Navigator"
+                    alt="guideRx WELLNESS PLATFORM"
                     width={600}
                     height={400}
                     className="w-full h-auto rounded-2xl shadow-2xl"

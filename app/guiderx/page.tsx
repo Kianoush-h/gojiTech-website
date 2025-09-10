@@ -36,8 +36,8 @@ const GuideRxPage = () => {
     },
     {
       icon: Target,
-      title: 'Personalized Wellness Plans',
-      description: 'Create tailored wellness plans that address individual patient needs and health goals.'
+      title: 'Consumer Safety',
+      description: 'Alerts for contraindications, interactions and other risks of adverse events'
     },
     {
       icon: BarChart,
@@ -51,8 +51,8 @@ const GuideRxPage = () => {
     },
     {
       icon: Shield,
-      title: 'Compliance and Safety',
-      description: 'Ensure all recommendations meet regulatory requirements and safety standards.'
+      title: 'Compliance',
+      description: 'Ensure all recommendations meet regulatory requirements and support insurer utilization policies.'
     },
     {
       icon: Zap,
@@ -110,8 +110,7 @@ const GuideRxPage = () => {
                   </h1>
                   
                   <p className="text-xl text-dark-600 mb-8 leading-relaxed">
-                    Cannabis Wellness Navigator that empowers producers and retailers with AI-driven 
-                    wellness recommendations, leveraging clinical research and comprehensive product databases.
+                  A platform that empowers healthcare professionals, patients, and educators, with AI-driven wellness recommendations, leveraging credible clinical research and clinical best practices.  The Cannabis Wellness Navigator is a plain-language version of GuideRx that can be white-labelled by retailers and used by their wellness seekers.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -131,7 +130,7 @@ const GuideRxPage = () => {
                     <Image
                       // src="/images/guideRx.png"
                       src="/images/search3.png"
-                      alt="guideRx Cannabis Wellness Navigator"
+                      alt="guideRx WELLNESS PLATFORM"
                       width={600}
                       height={400}
                       className="w-full h-auto rounded-2xl shadow-2xl"

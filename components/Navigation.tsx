@@ -35,7 +35,7 @@ const Navigation = () => {
 
   const products = [
     { name: 'claimRx 2.0', href: '/gojirx', description: 'AI-Powered Claims Processing' },
-    { name: 'guideRx', href: '/guiderx', description: 'Cannabis Wellness Navigator' },
+    { name: 'guideRx', href: '/guiderx', description: 'Wellness Platform' },
     { name: 'selectRx', href: '/selectrx', description: 'Intelligent Product Selection' },
     { name: 'Pharmacy Network', href: '/pharmacy-network', description: 'Trusted Partner Network' },
     { name: 'Formulary (coming soon)', href: '/formulary', description: 'Evidence-Based Coverage' }

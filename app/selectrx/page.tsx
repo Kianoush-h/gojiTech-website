@@ -94,7 +94,7 @@ const SelectRxPage = () => {
                     <Image
                       src="/images/guideRx2.png"
                       // src="/images/search2.png"
-                      alt="guideRx Cannabis Wellness Navigator"
+                      alt="guideRx WELLNESS PLATFORM"
                       width={600}
                       height={400}
                       className="w-full h-auto rounded-2xl shadow-2xl"

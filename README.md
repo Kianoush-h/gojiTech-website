@@ -25,7 +25,7 @@ The claimRx dashboard provides comprehensive analytics and claims processing cap
 Our three flagship products work together to create a complete healthcare management ecosystem:
 
 - **claimRx 2.0**: AI-powered claims processing system that streamlines billing and reduces administrative tasks
-- **guideRx**: Cannabis wellness navigator providing AI-driven product recommendations
+- **guideRx**: WELLNESS PLATFORM providing AI-driven product recommendations
 - **claimRx**: Consumer-friendly claims app for easy submission and tracking
 
 ## 🚀 Technologies Used

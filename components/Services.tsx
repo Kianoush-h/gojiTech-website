@@ -27,13 +27,13 @@ const Services = () => {
     {
       icon: Leaf,
       title: 'guideRx',
-      subtitle: 'Cannabis Wellness Navigator',
+      subtitle: 'Wellness Platform',
       description: (
         <>
-          GuideRx is a wellness navigation tool to consolidate the scientific body-of-knowledge on cannabinoids in the user’s finger tips.  It empowers wellness seekers, healthcare professionals, and educators alike with research summaries, links to the literature, and personalized product formulations. 
+          GuideRx is a navigation tool to consolidate the scientific body-of-knowledge on cannabinoids in the user’s finger tips.  It empowers wellness seekers, patients, healthcare professionals, and educators alike with research summaries, links to the literature and studies, and personalized product formulations. The Cannabis Wellness Navigator is a plain-language version of GuideRx that can be white-labelled by retailers and used by their wellness seekers.
         </>
       ),
-      features: ['Personalized Plans', 'Clinical Research', 'Product Matching', 'Wellness Guidance'],
+      features: ['Clinical Research', 'Product Formulations', 'Safety Alerts', 'Wellness Guidance'],
       image: '/images/search3.png',
       link: '/guiderx'
     },
@@ -60,7 +60,7 @@ const Services = () => {
           <span className="text-accent font-medium">Powered by 36Eight Technologies</span>
         </>
       ),
-      features: ['Circle of Care', 'Physician Integration', 'Pharmacy Management', 'Wide Network Reach'],
+      features: ['Circle of Care', 'Physician Engagement', 'Pharmacy Management', 'Wide Network Reach'],
       image: '/images/middle.png',
       link: '/pharmacy-network'
     },
@@ -71,7 +71,7 @@ const Services = () => {
       description: (
         <>
           
-          An AI-maintained formulary driven by the GuideRx knowledge base and reviewed by an independent advisory group.  Ingested into the SelectRx catalogue management system, the formulary standard will provide the platform for insurers to expand cannabinoid therapy beyond health spending accounts as pharmacoeconomic study demonstrate the business case for such therapies; all expanding market size and reach for Licensed Sellers.
+          An AI-maintained formulary driven by the GuideRx knowledge base and reviewed by an independent advisory group.  Ingested into the SelectRx catalogue management system, the formulary standard will provide the platform for insurers to expand cannabinoid therapy beyond health spending accounts as economic study demonstrate the business case for such therapies; all expanding market size and reach for Licensed Sellers.
         </>
       ),
       features: ['AI-Maintained', 'Knowledge Base Driven', 'Independent Review', 'Insurance Integration'],

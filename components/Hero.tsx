@@ -23,7 +23,7 @@ const Hero = () => {
     },
     {
       title: 'guideRx',
-      subtitle: 'Cannabis Wellness Navigator',
+      subtitle: 'Wellness Platform',
       image: '/images/guideRx2.png',
       link: '/guiderx'
     }
