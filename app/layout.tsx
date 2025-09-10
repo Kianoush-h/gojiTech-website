@@ -21,11 +21,11 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'gojitech | Creative Technology Studio',
+  title: 'gojitech | Future of Health Access',
   description: 'We empower brands to inspire people through innovative digital experiences.',
   metadataBase: new URL('https://gojitech.com'),
   openGraph: {
-    title: 'gojitech | Creative Technology Studio',
+    title: 'gojitech | Future of Health Access',
     description: 'We empower brands to inspire people through innovative digital experiences.',
     url: 'https://gojitech.com',
     siteName: 'gojitech',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'gojitech | Creative Technology Studio',
+    title: 'gojitech | Future of Health Access',
     description: 'We empower brands to inspire people through innovative digital experiences.',
     images: ['/og-image.jpg'],
   },
