@@ -71,7 +71,7 @@ const Services = () => {
       description: (
         <>
           
-          An AI-maintained formulary driven by the GuideRx knowledge base and reviewed by an independent advisory group.  Ingested into the SelectRx catalogue management system, the formulary standard will provide the platform for insurers to expand cannabinoid therapy beyond health spending accounts as economic study demonstrate the business case for such therapies; all expanding market size and reach for Licensed Sellers.
+          An AI-maintained formulary driven by the GuideRx knowledge base and reviewed by an independent advisory group.  Ingested into the SelectRx catalogue management system, the formulary standard will provide the platform for insurers to expand cannabinoid therapy beyond health spending accounts as pharmacoeconomic study demonstrate the business case for such therapies; all expanding market size and reach for Licensed Sellers.
         </>
       ),
       features: ['AI-Maintained', 'Knowledge Base Driven', 'Independent Review', 'Insurance Integration'],
