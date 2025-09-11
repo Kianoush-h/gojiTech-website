@@ -56,7 +56,7 @@ const Services = () => {
       subtitle: 'Pharmacy-Led Circle of Care',
       description: (
         <>
-          Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply received the registration, medical document and subsequent orders. The program reach is over 85% of pharmacies in British Columbia and 65% or pharmacies in English Canada. <br /><br />
+          Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply receives the registration, medical document and subsequent orders. The program reach is over 85% of pharmacies in British Columbia and 65% or pharmacies in English Canada. <br /><br />
           <span className="text-accent font-medium">Powered by 36Eight Technologies</span>
         </>
       ),

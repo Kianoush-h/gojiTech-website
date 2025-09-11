@@ -88,7 +88,7 @@ const PharmacyNetworkPage = () => {
                   </h1>
                   
                   <p className="text-xl text-dark-600 mb-8 leading-relaxed">
-                  Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply received the registration, medical document and subsequent orders.
+                  Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply receives the registration, medical document and subsequent orders.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -170,7 +170,7 @@ const PharmacyNetworkPage = () => {
 
                 <div className="space-y-6 text-dark-600 text-lg leading-relaxed">
                   <p>
-                  Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply received the registration, medical document and subsequent orders.
+                  Licenced sellers (LSs) are connected to an innovative program delivering a pharmacy-led circle of care where the physician issues the medical document to the pharmacist who manages the cannabis therapy within the broader medication profile.  The LS simply receives the registration, medical document and subsequent orders.
                   </p>
                   <p>
                   The program reach is over 85% of pharmacies in British Columbia and 65% or pharmacies in English Canada and has accessed medical prescribers who had previously been reluctant to consider cannabinoid therapy as an option through events like grand rounds.
